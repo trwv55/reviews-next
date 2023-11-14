@@ -1,0 +1,187 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "slug": "hollow-knight",
+        "title": "Hollow Knight"
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "slug": "stardew-valley",
+        "title": "Stardew Valley"
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "slug": "hellblade-senuas-sacrifice",
+        "title": "Hellblade: Senua's Sacrifice"
+      }
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "slug": "dont-starve-together",
+        "title": "Don't Starve Together"
+      }
+    },
+    {
+      "id": 5,
+      "attributes": {
+        "slug": "fall-guys",
+        "title": "Fall Guys: Ultimate Knockout"
+      }
+    },
+    {
+      "id": 6,
+      "attributes": {
+        "slug": "inside",
+        "title": "INSIDE"
+      }
+    },
+    {
+      "id": 7,
+      "attributes": {
+        "slug": "firewatch",
+        "title": "Firewatch"
+      }
+    },
+    {
+      "id": 8,
+      "attributes": {
+        "slug": "hades-2018",
+        "title": "Hades"
+      }
+    },
+    {
+      "id": 9,
+      "attributes": {
+        "slug": "ark-survival-of-the-fittest",
+        "title": "ARK: Survival Of The Fittest"
+      }
+    },
+    {
+      "id": 10,
+      "attributes": {
+        "slug": "warhammer-vermintide-2",
+        "title": "Warhammer: Vermintide 2"
+      }
+    },
+    {
+      "id": 11,
+      "attributes": {
+        "slug": "cuphead",
+        "title": "Cuphead"
+      }
+    },
+    {
+      "id": 12,
+      "attributes": {
+        "slug": "layers-of-fear",
+        "title": "Layers of Fear"
+      }
+    },
+    {
+      "id": 13,
+      "attributes": {
+        "slug": "no-mans-sky",
+        "title": "No Man's Sky"
+      }
+    },
+    {
+      "id": 14,
+      "attributes": {
+        "slug": "disco-elysium",
+        "title": "Disco Elysium"
+      }
+    },
+    {
+      "id": 15,
+      "attributes": {
+        "slug": "dead-cells",
+        "title": "Dead Cells"
+      }
+    },
+    {
+      "id": 16,
+      "attributes": {
+        "slug": "darkest-dungeon",
+        "title": "Darkest Dungeon"
+      }
+    },
+    {
+      "id": 17,
+      "attributes": {
+        "slug": "subnautica",
+        "title": "Subnautica"
+      }
+    },
+    {
+      "id": 18,
+      "attributes": {
+        "slug": "what-remains-of-edith-finch",
+        "title": "What Remains of Edith Finch"
+      }
+    },
+    {
+      "id": 19,
+      "attributes": {
+        "slug": "the-witness",
+        "title": "The Witness"
+      }
+    },
+    {
+      "id": 20,
+      "attributes": {
+        "slug": "superhot",
+        "title": "SUPERHOT"
+      }
+    },
+    {
+      "id": 21,
+      "attributes": {
+        "slug": "overcooked",
+        "title": "Overcooked"
+      }
+    },
+    {
+      "id": 22,
+      "attributes": {
+        "slug": "a-way-out-2018",
+        "title": "A Way Out"
+      }
+    },
+    {
+      "id": 23,
+      "attributes": {
+        "slug": "black-mesa",
+        "title": "Black Mesa"
+      }
+    },
+    {
+      "id": 24,
+      "attributes": {
+        "slug": "celeste",
+        "title": "Celeste"
+      }
+    },
+    {
+      "id": 25,
+      "attributes": {
+        "slug": "human-fall-flat",
+        "title": "Human: Fall Flat"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 25
+    }
+  }
+}
