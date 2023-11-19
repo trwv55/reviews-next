@@ -16,7 +16,8 @@ export default async function ReviewsPage() {
                 {reviews.map((review) => (
                     <li
                         key={review.slug}
-                        className="bg-white border w-80 rounded shadow hover:shadow-xl">
+                        className="bg-white border w-80 rounded shadow hover:shadow-xl"
+                    >
                         <Link href={`/reviews/${review.slug}`}>
                             <img
                                 className="rounded-t"
