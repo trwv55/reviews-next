@@ -2,11 +2,11 @@ import Heading from '@/components/Heading';
 import { getReview, getSlugs } from '@/lib/reviews';
 import ShareLinkButton from '@/components/ShareLinkButton';
 
-// export async function generateStaticParams() {
-//     const slugs = await getSlugs();
+export async function generateStaticParams() {
+    const slugs = await getSlugs();
 
-//     return slugs.map((slug) => ({ slug }));
-// }
+    return slugs.map((slug) => ({ slug }));
+}
 
 // export async function generateMetadata({ params: { slug } }) {
 //     const review = await getReview(slug);
@@ -18,7 +18,7 @@ import ShareLinkButton from '@/components/ShareLinkButton';
 export default async function ReviewPage({ params: { slug } }) {
     const review = await getReview(slug);
 
-    console.log('item', review.body);
+    // console.log('item', review);
 
     return (
         <>
@@ -30,7 +30,7 @@ export default async function ReviewPage({ params: { slug } }) {
             <img className="mb-2 rounded" src={review.image} alt="" width="640" height="360" />
             <article
                 className="max-w-screen-sm prose prose-slate"
-                // dangerouslySetInnerHTML={{ __html: review.body }}
+                dangerouslySetInnerHTML={{ __html: review.body }}
             />
         </>
     );
