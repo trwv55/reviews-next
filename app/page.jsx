@@ -1,28 +1,45 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Heading from '@/components/Heading';
-import { getFeaturedReview } from '@/lib/reviews';
+import { getReviews } from '@/lib/reviews';
+
+export const dynamic = 'force-dynamic';
 
 export default async function HomePage() {
-    const review = await getFeaturedReview();
+    const reviews = await getReviews(3);
     // console.log('review', review);
     return (
         <>
             <Heading>Indie Gamer</Heading>
             <p className="pb-3">Only the best indie games, reviewed for you</p>
-            <div className="bg-white w-80 border rounded shadow hover:shadow-xl sm:w-full">
-                <Link className="flex flex-col sm:flex-row" href={`/reviews/${review.slug}`}>
-                    <img
-                        className="rounded-t sm:rounded-l sm:rounded-r-none"
-                        src={review.image}
-                        alt=""
-                        width="320"
-                        height="180"
-                    />
-                    <h2 className="font-orbitron font-semibold py-1 text-center sm:px-2">
-                        {review.title}
-                    </h2>
-                </Link>
-            </div>
+            <ul className="flex flex-col gap-3">
+                {reviews.map((review, index) => (
+                    <li
+                        key={review.slug}
+                        className="bg-white w-80 border rounded shadow hover:shadow-xl sm:w-full"
+                    >
+                        <Link
+                            className="flex flex-col sm:flex-row"
+                            href={`/reviews/${review.slug}`}
+                        >
+                            <Image
+                                className="rounded-t sm:rounded-l sm:rounded-r-none"
+                                src={review.image}
+                                alt=""
+                                priority={index === 0}
+                                width="320"
+                                height="180"
+                            />
+                            <div className="px-2 py-1 text-center sm:text-left">
+                                <h2 className="font-orbitron font-semibold py-1 text-center sm:px-2">
+                                    {review.title}
+                                </h2>
+                                <p className="hidden pt-2 sm:block">{review.subtitle}</p>
+                            </div>
+                        </Link>
+                    </li>
+                ))}
+            </ul>
         </>
     );
 }
