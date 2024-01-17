@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Heading from '@/components/Heading';
 import { getReviews } from '@/lib/reviews';
 import PaginationBar from '@/components/PaginationBar';
+import SearchBox from '@/components/SearchBox';
 
 export const revalidate = 30;
 
@@ -19,7 +20,10 @@ export default async function ReviewsPage({ searchParams }) {
     return (
         <>
             <Heading>Reviews</Heading>
-            <PaginationBar href="/revies" page={page} pageCount={pageCount} />
+            <div className="flex justify-between pb-3">
+                <PaginationBar href="/revies" page={page} pageCount={pageCount} />
+                <SearchBox />
+            </div>
             <ul className="flex flex-row flex-wrap gap-3">
                 {reviews.map((review, index) => (
                     <li
